@@ -9,12 +9,6 @@
             <path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-width="7.1111"
                 d="M46.222 3.556l-21.333 21.333-21.333-21.333"></path>
         </symbol>
-<<<<<<< HEAD
-<symbol id="icon-iconarrow" viewBox="0 0 32 32">
-<path stroke="green" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6.333 25.667l19.333-19.333M25.667 6.333h-18M25.667 6.333v18"></path>
-</symbol>
-
-=======
         <symbol id="icon-tel" viewBox="0 0 32 32">
             <path fill="none" stroke="#14c57c" style="stroke: var(--color1, #14c57c)"
                 stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
@@ -41,6 +35,5 @@
             <path
                 d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
         </symbol>
->>>>>>> main
     </defs>
 </svg>

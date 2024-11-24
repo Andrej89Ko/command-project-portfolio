@@ -48,7 +48,7 @@ let countI = 0;
 const carcassImage = photo => {
   return `
   <div class="wrapLoadImg">
-  <ul>
+  <ul class="wrapCarcass">
   <li><img class="imgWrap" src="${photo.src}" heigth="500" width="1000" alt=""></li>
   <li><a class="siteLoad" href="https://www.edu.goit.global/uk/homepage" target="_blank" rel="nofollow"><p class="loadText">${photo.name}</p></a></li>
   </ul>
