@@ -1,15 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 .titleMain {
   font-family: 'impact', sans-serif;
   text-align: center;
-  margin: 0 20px 40px;
-  font-weight: 400;
-  font-size: 102px;
-  line-height: 124px;
-  letter-spacing: 1.8px;
 }
 /* #projects {
   background-color: #f0f0f0;
 } */
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
 .myProject[data-theme='light'] {
   background-color: #f0f0f0;
@@ -17,10 +20,9 @@
 .myProject[data-theme='dark'] {
   background-color: #1e2023;
 }
-
-li {
-  margin-left: 20px;
-  margin-right: 20px;
+.myProject {
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .LoadImg {
   display: flex;
@@ -32,7 +34,6 @@ li {
 }
 .imgWrap {
   border-radius: 20px;
-  box-shadow: 3px 3px 10px rgb(228, 100, 100);
 }
 .siteLoad {
   text-decoration: none;
@@ -49,37 +50,27 @@ li {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.projectFWrap,
+/* .projectFWrap,
 .projectSWrap,
 .projectTWrap {
   max-width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-.container {
-  min-width: 320px;
-  margin-bottom: 80px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+} */
 .mainNotice {
-  font-size: 38px;
   text-transform: uppercase;
-  line-height: 64px;
-  letter-spacing: 1.8px;
-  font-weight: 400;
   margin: 0 0 40px;
   max-width: 291px;
+  line-height: 64px;
+  letter-spacing: 1.8px;
 }
 .noticeSpan {
   color: #00b068;
   text-transform: uppercase;
-  font-size: 30px;
   line-height: 64px;
   letter-spacing: 1.8px;
-  font-weight: 400;
-  display: block;
+  margin-bottom: 40px;
 }
 
 .projectTextTech {
@@ -90,7 +81,6 @@ li {
   font-weight: 300;
   letter-spacing: 0.5px;
   margin-top: 12px;
-  margin-bottom: 20px;
 }
 .wrapBtnText {
   display: flex;
@@ -107,12 +97,11 @@ li {
 }
 .projectBtnVisit {
   display: flex;
-  border-color: #bbbbbb;
   background-color: #e4e5e6;
   border-radius: 5px;
   align-items: center;
-  padding: 12px 12px 12px 24px;
   width: 125px;
+  justify-content: center;
   height: 48px;
   outline: none;
   font-weight: 500;
@@ -163,29 +152,30 @@ li {
 .projectTWrap {
   margin-top: 40px;
 }
+.container {
+  box-sizing: border-box;
+}
 
 /* media q  */
-/* @media (max-width: 359px) {
-  .container {
-    max-width: 320px;
-  }
-} */
+
 @media (min-width: 360px) {
   .container {
-    min-width: 320px;
     max-width: 360px;
+    margin: 0 auto;
   }
-
+  .titleMain {
+    margin-bottom: 40px;
+  }
   .mainNotice {
     font-size: 52px;
   }
   .noticeSpan {
     font-size: 52px;
-    display: inline;
   }
   .wrapBtnText {
     align-items: flex-end;
     flex-direction: column;
+    margin-top: 16px;
   }
   .projectTextTitle {
     margin-top: 0;
@@ -197,10 +187,14 @@ li {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapContent {
+    display: block;
   }
   .titleMain {
-    margin: 0 74px 60px;
+    margin-bottom: 60px;
   }
   .mainNotice {
     font-weight: 400;
@@ -214,24 +208,23 @@ li {
     line-height: 124px;
     letter-spacing: 1.8px;
   }
-  .wrapContentPic {
-    flex-wrap: wrap;
-  }
   .projectTextTech {
-    display: inline-block;
     margin-top: 16px;
   }
-  .projectBtnVisit {
-    margin-left: 214px;
-  }
   .wrapBtnText {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: nowrap;
+    gap: 16px;
   }
   .projectTextTitle {
     margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.5px;
   }
   .projectSWrap,
   .projectTWrap {
